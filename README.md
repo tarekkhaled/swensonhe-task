@@ -8,9 +8,6 @@ This is implementation for the task using node, sequelize
 
 - [Installation](#installation)
 - [Tech Used](#tech-used)
-- [Questions](#questions)
-- [Links](#links)
-- [License](#license)
 
 ## Installation
 
@@ -39,3 +36,5 @@ npm start
 - Docker
 
 ## APIs As Postman Collection
+https://www.getpostman.com/collections/dbe9098186a8ccb77876
+
