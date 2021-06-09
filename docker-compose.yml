@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: swensonhe
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: swensonhe_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - swensone-db:/var/lib/postgresql/data
+
+  swensonhe-task:
+    build:
+      context: .
+    environment:
+      DB_NAME: swensonhe_db
+      DB_USER: swensonhe
+      DB_PASSWORD: password
+      DB_HOST: postgres
+    depends_on:
+      - postgres
+    ports:
+      - "3001:3001"
+
+volumes:
+  swensone-db:
