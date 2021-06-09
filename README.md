@@ -14,7 +14,7 @@ This is implementation for the task using node, sequelize
 ### using Docker
 
 ```
-docker-compose up --build
+sudo docker-compose up --build
 ```
 
 OR
